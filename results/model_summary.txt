@@ -1,0 +1,13 @@
+Linear Regression Business Analysis
+========================================
+
+Intercept (b0): 4.3475
+Slope (b1): 0.0147
+RMSE: 4.4515
+R² Score: 0.2930
+
+Model Description:
+This model predicts Units Sold based on Marketing Spend.
+The predictions are estimates and may differ from actual sales.
+Adding more variables such as weather, holidays, region,
+product type, and pricing could improve the model.
