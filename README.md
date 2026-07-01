@@ -1,78 +1,109 @@
 # Linear Regression Business Analysis
 
-## Project Goal
+## Project Overview
 
-This project demonstrates how Linear Regression can be used to predict **Units Sold** based on **Marketing Spend** using Python and Scikit-Learn.
+This project demonstrates how to build a Linear Regression model using Python and Scikit-Learn to predict product sales based on marketing expenditure.
 
-The objective is to show the complete machine learning workflow, from loading data to evaluating predictions and interpreting business results.
+The project includes:
 
----
-
-## Skills Demonstrated
-
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-* Scikit-Learn
-* Data Analysis
-* Data Visualization
-* Linear Regression
-* Business Analysis
-* Model Evaluation (RMSE and R²)
-
----
-
-## Dataset
-
-The dataset contains business sales information including:
-
-* Date
-* Region
-* Product
-* Units Sold
-* Price
-* Marketing Spend
-
----
-
-## Project Workflow
-
-1. Load the dataset
-2. Explore and summarize the data
-3. Visualize relationships
-4. Train a Linear Regression model
-5. Predict Units Sold
-6. Evaluate the model using RMSE and R²
-7. Save predictions to CSV
-8. Save a model summary report
-
----
-
-## Results
-
-The model predicts Units Sold from Marketing Spend.
-
-Project outputs include:
-
-* `results/regression_results.csv`
-* `results/model_summary.txt`
-
-The notebook also contains visualizations and business interpretation of the results.
+- Data exploration
+- Data visualization
+- Linear Regression model
+- Predictions
+- Model evaluation (RMSE and R²)
+- Residual analysis
+- Business interpretation
 
 ---
 
 ## Technologies Used
 
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-* Scikit-Learn
-* Jupyter Notebook
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-Learn
 
 ---
 
-## Author
+## Dataset
 
-Ronald Pineda
+The dataset contains the following business information:
+
+- Date
+- Region
+- Product
+- Units Sold
+- Price
+- Marketing Spend
+
+---
+
+## Model Results
+
+| Metric | Value |
+|--------|-------:|
+| RMSE | 4.45 |
+| R² Score | 0.2930 |
+| Intercept (b₀) | 4.3475 |
+| Slope (b₁) | 0.0147 |
+
+---
+
+## Business Interpretation
+
+- Marketing Spend has a positive relationship with Units Sold.
+- The model explains approximately **29%** of the variation in sales.
+- The average prediction error is approximately **4.45 units**.
+- The model provides an estimate of future sales based on marketing expenditure.
+- Additional features such as weather, holidays, region, and product category could improve prediction accuracy.
+
+---
+
+## Project Structure
+
+```
+Linear-Regression-Business-Analysis/
+│
+├── data/
+│   └── business_data.csv
+│
+├── images/
+│   └── actual_vs_predicted.png
+│
+├── results/
+│   ├── regression_results.csv
+│   └── model_summary.txt
+│
+├── Linear_Regression_Business_Analysis.ipynb
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## What This Project Demonstrates
+
+This project demonstrates:
+
+- Data loading and exploration with Pandas
+- Data visualization using Matplotlib
+- Building a Linear Regression model
+- Making predictions
+- Evaluating model performance using RMSE and R²
+- Residual analysis
+- Calculating the Sum of Squared Errors (SSE)
+- Comparing actual and predicted sales
+- Interpreting results from a business perspective
+
+---
+
+## Future Improvements
+
+Future versions of this project may include:
+
+- Decision Tree Regression
+- Random Forest Regression
+- Additional business variables such as weather, holidays, and region
+- Larger datasets for improved prediction accuracy
+- Model comparison between multiple machine learning algorithms
